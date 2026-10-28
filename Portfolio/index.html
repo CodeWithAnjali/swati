@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: black;
+        overflow: hidden;
+    }
+    .salute{
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+    }
+    .saluteTextContainer{
+        flex: 3;
+    }
+    .saluteText{
+        color: #333;
+        font-size: 50vw;
+        cursor: default;
+    }
+    h1{
+       
+        font-weight: bold;
+    }
+    .saluteTextContainer{
+        flex: 1;
+    }
+    .saluteImg{
+        width: 100%;
+    }
+    .nameContainer{
+        height: 100vh;
+        background-color: rebeccapurple;
+    }
+    .name{
+        font-size: 15vw;
+        color: #333;
+        cursor: default;
+        text-align: center;
+        line-height: 100vh;
+    }
+    h2{
+        display: block;
+        font-weight: bold;
+    }
+    .dark{
+        background:url(https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg1.png) ;
+    }
+    .jobTitleContainer{
+        height: 100vh;
+    }
+    .jobTitle{
+        font-size: 10vw;
+        color: #333;
+        line-height: 100vh;
+        cursor: default;
+    }
+    h2{
+        display: block;
+        font-weight: bold;
+    }
+    .purple{
+        background: rebeccapurple url(https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg2.png);
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        gap: 30vh;
+        padding:  0 100px;
+    }
+    .projectTitle{
+        /*font-size: 100vw; */
+        color: #333;
+    }
+
+     .project{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    height:100vh;
+    overflow:hidden;
+}
+    .phone{
+        flex: 1;
+        width: 300px;
+        height: 600px;
+        position: relative;
+    }
+
+    .phoneScreen {
+    width: 264px;
+    height: 567px;
+    background-color: rgb(132, 132, 199);
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 28px;
+    overflow: scroll;
+}
+
+.phoneApp {
+    width: 100%;
+}
+
+.projectDetail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.projectTitle {
+    font-size: 7vw;
+    color: #555;
+}
+
+.projectDesc {
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    line-height: 4opx;
+}
+p{
+    display: block;
+}
+
+.projectButton{
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #555;
+    cursor: pointer;
+    color: #555;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.projectTitle{
+    font-size: 7vw;
+    color: #555;
+}
+.projectDesc{
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+}
+.githubContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.githubTitle{
+    font-size: 100px;
+    color: #333;
+
+}
+.githubChart{
+    width: 820px;
+    text-align: center;
+}
+.dates{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    color:#555;
+    font-size: 12px;
+
+
+}
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.githubSm{
+    display: none;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="intro">
+             <div class="salute">
+                <div class="saluteTextContaine" style ="transform: translateY(0px);">
+    <h1 class="saluteText">Hi</h1>
+               </div>
+               <div class="saluteImgContainer" style ="transform: translateY(0px);">
+                <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg5.png" alt class="saluteImg">
+               </div>
+            </div>
+            <div class="nameContainer">
+                <h2 class="name"  style ="transform: translateY(0px);">I'm Anjali</h2>
+            </div>
+            <div class="jobTitleContainer dark" style="background-position-Y: 750px;">
+                <h2 class="jobTitle" style="transform:translateX(calc(200vh-1452px));">a WebDeveloper</h2>
+            </div>
+            <div class="jobTitleContainer purple" style="background-position-Y: -726px;">
+                <h2 class="jobTitle" style="transform:translateX(calc(-300vh+1452px));">and a Desginer</h2>
+            </div>
+        </div>
+
+        <!--project-->
+
+        <div class="projets">
+            <h1 class="projectTitle" style="transform:translateX(calc(400vh-1650.2px));" >Here are some of my project</h1>
+            <div class="project">
+
+              <div class="phone" style="transform:translateX(calc(500vh-1650.4px));">
+                <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg6.png" alt="">
+                <div class="phoneScreen">
+                    <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/teach.png" alt="phoneapp">
+                </div>
+            </div> 
+            <div class="projectDetail">
+                <h1 class="projectTitle">My project</h1>
+                <p class="projectDesc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium tempora, eaque maiores illum veritatis nam modi ipsa corrupti labore laudantium magni harum blanditiis excepturi laboriosam praesentium consequatur sapiente! Quas dolorum debitis minus dolore!
+                </p>
+                <button class="projectButton">
+                    "Learn More"
+                    
+                </button>
+            </div> 
+            </div>
+            <div class="project">
+                <div class="laptop" style="transform:translateX(calc(600vh-1605.6px));">
+                   <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/phone.png" alt="">
+                     <div class="laptopScreen">
+                       <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/phone.png" alt class="laptopApp">
+                        </div>
+
+                </div>
+                <div class="project">
+                    <div class="laptop">
+                        <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg4.png" alt="" />
+                        <div class="laptopScreen">
+                            <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/phone.png" alt="" class="laptopApp" />
+                        </div>
+                    </div>
+                    <div class="projectDetail">
+                        <h1 class="projectTitle">Vortex</h1>
+                        <p class="projectDesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                            repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+                            vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+                            veritatis possimus! Accusamus repudiandae quia natus et iste earum
+                            ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+                            laudantium recusandae illo veritatis possimus! laudantium
+                            recusandae illo veritatis possimus! recusandae illo veritatis.
+                        </p>
+                        <button class="projectButton">Learn More</button>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="phone">
+                        <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg6.png" alt="" />
+                        <div class="phoneScreen">
+                            <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/phone2.png" alt="" class="phoneApp" />
+                        </div>
+                    </div>
+                    <div class="projectDetail">
+                        <h1 class="projectTitle">Vortex</h1>
+                        <p class="projectDesc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                            repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+                            vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+                            veritatis possimus! Accusamus repudiandae quia natus et iste earum
+                            ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+                            laudantium recusandae illo veritatis possimus! laudantium
+                            recusandae illo veritatis possimus! recusandae illo veritatis.
+                        </p>
+                        <button class="projectButton">Learn More</button>
+                    </div>
+                </div>
+    
+    
+            </div>
+
+            
+     <!-- GITHUB  -->
+     <div class="githubContainer">
+        <h1 class="githubTitle">Want so see all Projects?
+        </h1>
+
+        <div class="githubChart">
+            <div class="dates">
+                <span>Jan</span>
+                <span>Feb</span>
+                <span>Mar</span>
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+                <span>Agu</span>
+                <span>Sep</span>
+                <span>Oct</span>
+                <span>Nov</span>
+                <span>Dec</span>
+               
+            </div>
+            <div class="boxContainer"></div>
+            <h1 class="githubTitle">ON GITHUB</h1>
+        </div>
+        <div class="githubSm">
+            <a href="">
+                <img src="https://gaurav-r-a-j.github.io/New-Portfolio/img/pimg3.png" alt="">
+            </a>
+            <h2>Find Me on Github</h2>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
